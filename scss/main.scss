@@ -1,0 +1,119 @@
+@import '_colors';
+body {
+    background-color: $background;
+    background: radial-gradient(circle, rgba(171, 200, 212, 1) 0%, rgba(204, 222, 230, 1) 35%, rgba(224, 235, 240, 1) 50%, rgba(237, 243, 240, 1) 78%, rgba(244, 248, 251, 1) 100%);
+    background-attachment: fixed;
+    font-size: 100%;
+    .sidenav,
+    .fixed_header,
+    .toc,
+    .sidetoc,
+    .sidefilter {
+        border: none;
+        background-color: transparent;
+    }
+    .sidefilter {
+        margin-top: 25px;
+        padding: 0;
+        form {
+            margin: 0;
+            font-size: 1.4rem;
+            input {}
+        }
+    }
+    .sidetoc {
+        text-align: left;
+        .toc {
+            ul.nav.level1 {
+                float: left;
+                li {
+                    font-size: 1.5rem;
+                    a {
+                        color: $gl-dark-grey;
+                        &:hover {
+                            color: $gl-green;
+                        }
+                    }
+                    &.active {
+                        >a {
+                            color: $gl-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .subnav.navbar{
+        // background-color: lighten(rgba(171, 200, 212,1), 17%);
+        background-color: rgba(171, 200, 212, 0.2);
+        border:none;
+
+        .level1.breadcrumb {
+            font-size: 1.5rem;
+            a {
+                color: $gl-dark-grey;
+                &:hover {
+                    color: $gl-green;
+                }
+            }
+        }
+    }
+    
+    .collapse.navbar-collapse {
+        padding-right: 0;
+        ul.level1 {
+            li {
+                padding-right: 0;
+                padding-left: 20px;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .navbar-inverse {
+        background-color: $gl-dark-grey;
+    }
+    ul.nav.level1 {
+        li {
+            a {
+                font-weight: 600;
+                color: $high-contrast-text;
+            }
+            &.active {
+                a {
+                    background-color: transparent;
+                    color: $gl-green;
+                }
+            }
+        }
+    }
+    header {
+        ul.nav.level1 {
+            float: right;
+        }
+    }
+    article {
+        margin:0 -15px;
+        background: $article-background;
+        border-radius: 10px;
+        box-shadow: rgba(39, 44, 49, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+        min-height: 100vh;
+        padding: 30px 65px;
+        font-size: 1.60rem;
+        h1 {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $gl-dark-grey;
+        }
+
+        div.actions {
+            position: absolute;
+            top:65px;
+            right:65px;
+        }
+    }
+    footer {
+        span {
+            font-size: 1.4rem;
+        }
+    }
+}

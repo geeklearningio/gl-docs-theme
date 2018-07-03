@@ -1,0 +1,5 @@
+<div class="actions">
+    <a href="{{docurl}}" class="contribution-link">
+        <i class="fa fa-pencil-alt"></i> Edit
+    </a>
+</div>

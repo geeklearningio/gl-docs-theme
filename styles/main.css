@@ -1,0 +1,73 @@
+body {
+  background-color: #F4F8FB;
+  background: radial-gradient(circle, #abc8d4 0%, #ccdee6 35%, #e0ebf0 50%, #edf3f0 78%, #f4f8fb 100%);
+  background-attachment: fixed;
+  font-size: 100%; }
+  body .sidenav,
+  body .fixed_header,
+  body .toc,
+  body .sidetoc,
+  body .sidefilter {
+    border: none;
+    background-color: transparent; }
+  body .sidefilter {
+    margin-top: 25px;
+    padding: 0; }
+    body .sidefilter form {
+      margin: 0;
+      font-size: 1.4rem; }
+  body .sidetoc {
+    text-align: left; }
+    body .sidetoc .toc ul.nav.level1 {
+      float: left; }
+      body .sidetoc .toc ul.nav.level1 li {
+        font-size: 1.5rem; }
+        body .sidetoc .toc ul.nav.level1 li a {
+          color: #0C273D; }
+          body .sidetoc .toc ul.nav.level1 li a:hover {
+            color: #70B85D; }
+        body .sidetoc .toc ul.nav.level1 li.active > a {
+          color: #70B85D; }
+  body .subnav.navbar {
+    background-color: rgba(171, 200, 212, 0.2);
+    border: none; }
+    body .subnav.navbar .level1.breadcrumb {
+      font-size: 1.5rem; }
+      body .subnav.navbar .level1.breadcrumb a {
+        color: #0C273D; }
+        body .subnav.navbar .level1.breadcrumb a:hover {
+          color: #70B85D; }
+  body .collapse.navbar-collapse {
+    padding-right: 0; }
+    body .collapse.navbar-collapse ul.level1 li {
+      padding-right: 0;
+      padding-left: 20px;
+      font-size: 1.6rem; }
+  body .navbar-inverse {
+    background-color: #0C273D; }
+  body ul.nav.level1 li a {
+    font-weight: 600;
+    color: white; }
+  body ul.nav.level1 li.active a {
+    background-color: transparent;
+    color: #70B85D; }
+  body header ul.nav.level1 {
+    float: right; }
+  body article {
+    margin: 0 -15px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(39, 44, 49, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    min-height: 100vh;
+    padding: 30px 65px;
+    font-size: 1.60rem; }
+    body article h1 {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #0C273D; }
+    body article div.actions {
+      position: absolute;
+      top: 65px;
+      right: 65px; }
+  body footer span {
+    font-size: 1.4rem; }
